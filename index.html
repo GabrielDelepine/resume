@@ -1,0 +1,1250 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Gabriel Delépine</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNjQwIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDcuMi4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjYgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTMyMCAzMTJDMzg2LjMgMzEyIDQ0MCAyNTguMyA0NDAgMTkyQzQ0MCAxMjUuNyAzODYuMyA3MiAzMjAgNzJDMjUzLjcgNzIgMjAwIDEyNS43IDIwMCAxOTJDMjAwIDI1OC4zIDI1My43IDMxMiAzMjAgMzEyek0yOTAuMyAzNjhDMTkxLjggMzY4IDExMiA0NDcuOCAxMTIgNTQ2LjNDMTEyIDU2Mi43IDEyNS4zIDU3NiAxNDEuNyA1NzZMNDk4LjMgNTc2QzUxNC43IDU3NiA1MjggNTYyLjcgNTI4IDU0Ni4zQzUyOCA0NDcuOCA0NDguMiAzNjggMzQ5LjcgMzY4TDI5MC4zIDM2OHoiLz48L3N2Zz4="
+      type="image/svg+xml"
+    />
+    <style>
+      :root {
+        --page-width: 210mm;
+        --page-height: 297mm;
+
+        --outer-bg: #f3f3f3;
+        --paper: #ffffff;
+
+        --text: #1f1f1f;
+        --muted: #5f5f5f;
+        --soft: #7a7a7a;
+        --line: #d8d8d8;
+
+        --font-main: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+        --page-padding-top: 15mm;
+        --page-padding-right: 14mm;
+        --page-padding-bottom: 12mm;
+        --page-padding-left: 14mm;
+
+        --sidebar-width: 31%;
+        --content-gap: 10mm;
+
+        --name-size: 23pt;
+        --title-size: 11.5pt;
+        --meta-size: 9.5pt;
+        --body-size: 10.15pt;
+        --small-size: 9pt;
+        --section-title-size: 9pt;
+        --company-size: 10.3pt;
+
+        --line-height-body: 1.45;
+        --line-height-tight: 1.2;
+        --line-height-meta: 1.35;
+
+        --space-1: 2mm;
+        --space-2: 3.5mm;
+        --space-3: 5mm;
+        --space-4: 7mm;
+        --space-5: 9mm;
+        --space-6: 12mm;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--outer-bg);
+        color: var(--text);
+        font-family: var(--font-main);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        padding: 20px 0;
+      }
+
+      .page {
+        width: var(--page-width);
+        height: var(--page-height);
+        box-sizing: border-box;
+        margin: 0 auto 24px auto;
+        background: var(--paper);
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+        padding: var(--page-padding-top) var(--page-padding-right) var(--page-padding-bottom) var(--page-padding-left);
+        position: relative;
+        overflow: hidden;
+        page-break-after: always;
+        break-after: page;
+      }
+
+      .page:last-child {
+        page-break-after: auto;
+        break-after: auto;
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(48mm, var(--sidebar-width));
+        gap: var(--content-gap);
+        align-items: start;
+        min-height: calc(var(--page-height) - var(--page-padding-top) - var(--page-padding-bottom));
+      }
+
+      .main {
+        min-width: 0;
+        padding-right: 1mm;
+      }
+
+      .sidebar {
+        min-width: 0;
+        border-left: 1px solid var(--line);
+        padding-left: 6.5mm;
+
+        .photo {
+          width: 78%;
+          max-width: 42mm;
+          aspect-ratio: 4 / 5;
+          border: 1px solid var(--line);
+          margin: 0 auto var(--space-5) auto;
+          overflow: hidden;
+
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        section {
+          margin-bottom: var(--space-3);
+        }
+
+        .meta-list {
+          display: grid;
+          gap: 3mm;
+        }
+
+        .meta-item {
+          font-size: var(--small-size);
+          line-height: 1.45;
+          color: var(--text);
+        }
+
+        .meta-label {
+          display: block;
+          margin-bottom: 0.8mm;
+          font-size: 8.2pt;
+          line-height: 1.2;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: var(--soft);
+        }
+
+        .skill-groups {
+          display: grid;
+          gap: 4mm;
+
+          .skill-group {
+            display: grid;
+            gap: 1.2mm;
+
+            h3 {
+              margin: 0;
+              font-size: 8.2pt;
+              line-height: 1.2;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: var(--soft);
+            }
+
+            .items {
+              font-size: var(--small-size);
+              line-height: 1.5;
+              color: var(--text);
+            }
+          }
+        }
+      }
+
+      header.hero {
+        margin-bottom: var(--space-5);
+
+        .name {
+          margin: 0 0 var(--space-1) 0;
+          font-size: var(--name-size);
+          line-height: 1.02;
+          font-weight: 750;
+          letter-spacing: -0.02em;
+          color: #111111;
+        }
+
+        .headline {
+          margin: 0 0 1.8mm 0;
+          font-size: var(--title-size);
+          line-height: var(--line-height-tight);
+          font-weight: 600;
+          color: #2b2b2b;
+        }
+
+        .specialty {
+          margin: 0;
+          font-size: var(--meta-size);
+          line-height: var(--line-height-meta);
+          font-weight: 500;
+          letter-spacing: 0.01em;
+          color: var(--muted);
+        }
+      }
+
+      section {
+        margin-bottom: var(--space-5);
+
+        > h2 {
+          margin: 0 0 var(--space-3) 0;
+          padding-bottom: 1.8mm;
+          font-size: var(--section-title-size);
+          line-height: 1.2;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #2d2d2d;
+          border-bottom: 1px solid var(--line);
+        }
+      }
+
+      section.summary {
+        p {
+          margin: 0 0 1rem 0;
+          font-size: var(--body-size);
+          line-height: var(--line-height-body);
+          color: var(--text);
+          max-width: 100%;
+        }
+      }
+
+      article {
+        margin-bottom: var(--space-4);
+
+        header {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+          gap: 4mm;
+          align-items: start;
+          margin-bottom: 1.5mm;
+
+          .heading {
+            min-width: 0;
+
+            .title-line {
+              margin: 0;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: baseline;
+              gap: 1.7mm;
+              line-height: 1.25;
+
+              .company {
+                font-size: var(--company-size);
+                font-weight: 650;
+                color: #2b2b2b;
+                margin: 0;
+              }
+
+              .separator {
+                color: var(--soft);
+                font-weight: 500;
+              }
+
+              .role {
+                font-size: 10.7pt;
+                font-weight: 680;
+                color: #1a1a1a;
+                margin: 0;
+              }
+            }
+
+            .context {
+              margin: 1.1mm 0 2.2mm 0;
+              font-size: var(--small-size);
+              line-height: 1.3;
+              font-weight: 500;
+              color: var(--muted);
+            }
+          }
+
+          .date {
+            font-size: var(--small-size);
+            line-height: 1.2;
+            font-weight: 500;
+            color: var(--soft);
+            white-space: nowrap;
+            margin: 0;
+            padding-top: 0.5mm;
+          }
+        }
+
+        ul {
+          margin: 0;
+          padding-left: 4.2mm;
+
+          li {
+            margin: 0 0 1.8mm 0;
+            font-size: var(--body-size);
+            line-height: var(--line-height-body);
+            color: var(--text);
+          }
+
+          li:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      article.preview {
+        ul {
+          list-style-type: none;
+          padding-left: 0mm;
+        }
+      }
+
+      article.group {
+        margin-top: 4mm;
+
+        .sub {
+          margin-left: 2mm;
+          padding: 2mm 0 1mm 6mm;
+          border-left: 1px solid var(--line);
+
+          article {
+            margin-bottom: 4mm;
+          }
+        }
+      }
+
+      footer {
+        position: absolute;
+        left: var(--page-padding-left);
+        right: var(--page-padding-right);
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 6mm;
+        padding-top: 2.5mm;
+        padding-bottom: 6mm;
+        border-top: 1px solid var(--line);
+        font-size: 8.3pt;
+        line-height: 1.2;
+        color: var(--soft);
+        background-color: var(--paper);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      strong {
+        font-weight: 650;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        html,
+        body {
+          background: #ffffff;
+        }
+
+        body {
+          padding: 0;
+        }
+
+        .page {
+          width: 210mm;
+          min-height: 297mm;
+          margin: 0;
+          box-shadow: none;
+        }
+
+        .photo,
+        article,
+        section,
+        .sidebar-block {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- PAGE 1 -->
+      <div class="page">
+        <div class="layout">
+          <div class="main">
+            <header class="hero">
+              <h1 class="name">Gabriel Delépine</h1>
+              <p class="headline">Senior Software Engineer, Web Platforms &amp; Performance</p>
+              <p class="specialty">TypeScript · Node.js · Web Platforms</p>
+            </header>
+
+            <section class="summary">
+              <h2>Positionnement</h2>
+              <p>
+                J’interviens sur des problématiques de conception de systèmes, de performance et de maîtrise de la
+                complexité, dans des environnements où les choix techniques impactent directement le produit et
+                l’efficacité opérationnelle.
+              </p>
+              <p>
+                Je conçois des architectures simples et performantes, en m’appuyant sur l’existant et en cherchant le
+                bon niveau d’abstraction pour garantir lisibilité et maîtrise des coûts.
+              </p>
+              <p>
+                Dans un contexte où la production de code s’accélère, la capacité à structurer et rationaliser les
+                systèmes devient un levier déterminant.
+              </p>
+            </section>
+
+            <section>
+              <h2>Aperçu des expériences clés</h2>
+
+              <article class="preview">
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="company">Accor</span>
+                      <span class="separator">—</span>
+                      <span class="role">Architecte Web</span>
+                    </p>
+                  </div>
+                  <p class="date">juin 2024 — mars 2026</p>
+                </header>
+                <ul>
+                  <li>
+                    Stabilisation et simplification d’un BFF critique (all.com) en optimisant les stratégies de cache et
+                    de compression, améliorant la performance et la robustesse d’un tunnel de réservation multi-clients.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="preview">
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="company">Ubisoft</span>
+                      <span class="separator">—</span>
+                      <span class="role">Architecte, Dev Senior</span>
+                    </p>
+                  </div>
+                  <p class="date">avril 2020 - mars 2023</p>
+                </header>
+                <ul>
+                  <li>
+                    Refonte intégrale de support.ubisoft.com en posant une architecture simple et performante, tout en
+                    intégrant efficacement les expertises accessibilité, SEO et tracking. Contributions sur ubisoft.com
+                    au sein d’une équipe répartie entre la France et les États-Unis.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="preview">
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="company">Leboncoin</span>
+                      <span class="separator">—</span>
+                      <span class="role">Lead Dev</span>
+                    </p>
+                  </div>
+                  <p class="date">mai 2016 — août 2018</p>
+                </header>
+                <ul>
+                  <li>
+                    Engagement transverse dans la refonte de la plateforme, du frontend au backoffice : frontend
+                    isomorphique (SSR), rapprochement front/back via mocks et contrats, et déblocage de la migration du
+                    backoffice grâce à un layer de compatibilité permettant de livrer progressivement.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="preview">
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="company">Apside</span>
+                      <span class="separator">—</span>
+                      <span class="role">Architecte Web, Lead Dev</span>
+                    </p>
+                  </div>
+                  <p class="date">avril 2023 — janvier 2024</p>
+                </header>
+                <ul>
+                  <li>
+                    Conception d’une PWA offline-first avec persistance locale et synchronisation, garantissant la
+                    continuité d’usage en environnement réseau instable.
+                  </li>
+                </ul>
+              </article>
+            </section>
+          </div>
+
+          <aside class="sidebar">
+            <div class="photo">
+              <img
+                src="data:image/jpeg;base64,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"
+              />
+            </div>
+
+            <section>
+              <h2>Contact</h2>
+              <div class="meta-list">
+                <div class="meta-item">
+                  <span class="meta-label">Ville</span>
+                  Paris, France
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Email</span>
+                  gabriel.delepine@gmail.com
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Téléphone</span>
+                  (+33) 06 85 66 13 59
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">LinkedIn</span>
+                  linkedin.com/in/gabriel-delépine-286111b1/
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2>Compétences</h2>
+              <div class="skill-groups">
+                <div class="skill-group">
+                  <h3>Architecture web</h3>
+                  <div class="items">API Design · REST · GraphQL · Gateway · BFF</div>
+                </div>
+
+                <div class="skill-group">
+                  <h3>Stack Javascript</h3>
+                  <div class="items">TypeScript · Node.js · React.js</div>
+                </div>
+
+                <div class="skill-group">
+                  <h3>Applications web</h3>
+                  <div class="items">PWA · Web Components · Offline-first · Buildless · ES Modules</div>
+                </div>
+
+                <div class="skill-group">
+                  <h3>Performance et exploitation</h3>
+                  <div class="items">Web Performance · Scalabilité · SQL · SQLite · Linux · Nginx</div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2>Positionnement</h2>
+              <div class="skill-groups">
+                <div class="skill-group">
+                  <div class="items">Performance · Réduction de la complexité · Fiabilité des systèmes</div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2>Langues</h2>
+              <div class="skill-groups">
+                <div class="skill-group">
+                  <div class="items">
+                    Anglais : courant (contexte professionnel international, échanges quotidiens)
+                    <br /><br />
+                    Français : natif
+                  </div>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </div>
+
+        <footer>
+          <span>Gabriel Delépine</span>
+          <span>7 avril 2026</span>
+          <span>Page 1 sur 6</span>
+        </footer>
+      </div>
+
+      <!-- PAGE 2 -->
+      <div class="page">
+        <header class="hero">
+          <h1 class="name">Gabriel Delépine</h1>
+          <p class="headline">Senior Software Engineer, Web Platforms &amp; Performance</p>
+          <p class="specialty">TypeScript · Node.js · Web Platforms</p>
+        </header>
+
+        <section>
+          <h2>Expériences professionnelles (ordre chronologique)</h2>
+
+          <!-- Accor -->
+          <article>
+            <header>
+              <div class="heading">
+                <p class="title-line">
+                  <span class="company">Accor</span>
+                  <span class="separator">—</span>
+                  <span class="role">Architecte Web</span>
+                </p>
+                <p class="context">
+                  Paris · Optimisation d’un BFF au cœur du tunnel de réservation all.com (100% du CA digital direct)
+                </p>
+                <!-- Apollo Server, Typescript, Node.js, AWS, Hive (The Guild) -->
+              </div>
+              <p class="date">juin 2024 — mars 2026</p>
+            </header>
+            <ul>
+              <li>
+                Intervention sur un BFF GraphQL assurant l’agrégation de 12+ APIs REST hétérogènes (legacy et modernes)
+                dans un contexte de contraintes SLA et de forte volumétrie
+              </li>
+
+              <li>
+                Optimisation des performances du BFF via stratégie de cache avancée (pré-chargement, invalidation
+                asynchrone) et réduction des appels upstream sur des données froides
+              </li>
+
+              <li>
+                Résolution d’un goulot d’étranglement Redis (saturation bande passante) par mise en place d’une
+                compression des données (jusqu’à 90% de réduction), avec arbitrage fin latence / coût
+              </li>
+
+              <li>
+                Contribution à l’optimisation des coûts d’infrastructure (FinOps) : migration d’un cluster Redis vers
+                une solution serverless et recommandations d’usage d’instances ARM
+              </li>
+
+              <li>
+                Amélioration de la lisibilité du système GraphQL côté clients via l'utilisation d’outils d’observabilité
+                permettant pour les clients de visualiser facilement les appels REST induits
+              </li>
+
+              <li>Coordination technique lors d’incidents de production sur un périmètre critique</li>
+            </ul>
+          </article>
+
+          <!-- Apside -->
+          <article>
+            <header>
+              <div class="heading">
+                <p class="title-line">
+                  <span class="company">Apside</span>
+                  <span class="separator">—</span>
+                  <span class="role">Architecte Web, Lead Dev</span>
+                </p>
+                <p class="context">
+                  Paris · PWA offline-first avec synchronisation de données et fonctionnement hors connexion
+                </p>
+                <!-- Progressive-Web-App, Typescript, React.js, IndexedDB, Offline-first -->
+              </div>
+              <p class="date">avril 2023 — janvier 2024</p>
+            </header>
+            <ul>
+              <li>
+                Définition de l’architecture d’une PWA offline-first avec persistance locale (IndexedDB) et
+                synchronisation bidirectionnelle de données NoSQL (MongoDB)
+              </li>
+
+              <li>
+                Conception du modèle de synchronisation et des stratégies de résolution automatique des conflits,
+                garantissant la cohérence des données en usage déconnecté prolongé
+              </li>
+
+              <li>
+                Cadrage technique en amont (étude, POC, formalisation des flux) ayant permis de sécuriser les choix
+                structurants et de réduire le risque d’exécution du projet
+              </li>
+
+              <li>
+                Pilotage technique d’une équipe de 5 à 17 développeurs selon les phases, avec arbitrages d’architecture
+                et accompagnement au quotidien
+              </li>
+
+              <li>
+                Optimisation de l’architecture frontend (limitation des dépendances, exploitation des capacités natives
+                navigateur) pour garantir performance, robustesse et maintenabilité sur iPad
+              </li>
+
+              <li>
+                Coordination avec les équipes data pour fiabiliser l’accès aux données dans un contexte d’intégration
+                progressive des flux
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <footer>
+          <span>Gabriel Delépine</span>
+          <span>7 avril 2026</span>
+          <span>Page 2 sur 6</span>
+        </footer>
+      </div>
+
+      <!-- PAGE 3 -->
+      <div class="page">
+        <header class="hero">
+          <h1 class="name">Gabriel Delépine</h1>
+          <p class="headline">Senior Software Engineer, Web Platforms &amp; Performance</p>
+          <p class="specialty">TypeScript · Node.js · Web Platforms</p>
+        </header>
+
+        <section>
+          <h2>Expériences professionnelles (ordre chronologique)</h2>
+
+          <!-- Ubisoft -->
+          <article class="group">
+            <header>
+              <div class="heading">
+                <p class="title-line">
+                  <span class="company">Ubisoft</span>
+                </p>
+                <p class="context">Paris · Progression interne sur 2 postes successifs</p>
+              </div>
+              <p class="date">avril 2020 — mars 2023</p>
+            </header>
+
+            <div class="sub">
+              <article>
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="role">Architecte, Lead Dev</span>
+                    </p>
+                    <p class="context">
+                      support.ubisoft.com · SEO, accessibilité et performance web · janvier 2021 — mars 2023
+                    </p>
+                    <!-- Typescript, React.js, Node.js, NextJS → Webpack, Graphql, SSR, ES Module -->
+                  </div>
+                </header>
+                <ul>
+                  <li>
+                    Définition d’une architecture frontend simple et maintenable, en tenant compte des exigences SEO,
+                    accessibilité et tracking
+                  </li>
+
+                  <li>
+                    Validation du choix d’une SPA après vérification du rendu du contenu par le crawler Google, évitant
+                    l’introduction de SSR ou SSG
+                  </li>
+
+                  <li>
+                    Choix d’une stack simple et maîtrisée (React + Webpack) en remplacement d’une première itération
+                    sous Next.js, sans bénéfice notable au regard des coûts d’infrastructure et de maintenance
+                  </li>
+
+                  <li>
+                    Pilotage technique d’une équipe de 2 à 5 développeurs, avec revues de code et arbitrages
+                    d’implémentation
+                  </li>
+
+                  <li>
+                    Livraison du MVP en avance, avec un coût inférieur au prévisionnel, tout en atteignant les objectifs
+                    de conformité et de qualité attendus
+                  </li>
+                </ul>
+              </article>
+
+              <article>
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="role">Dev Senior</span>
+                    </p>
+                    <p class="context">
+                      ubisoft.com · contrib au sein d’une équipe frontend répartie entre Paris et San Francisco · avril
+                      2020 — janvier 2021
+                    </p>
+                    <!-- Typescript, React.js, Node.js, GraphQL, SSR, CMS headless -->
+                  </div>
+                </header>
+                <ul>
+                  <li>
+                    Contribution au refactoring du site ubisoft.com dans un contexte international (équipes France /
+                    États-Unis) avec coordination quotidienne
+                  </li>
+
+                  <li>
+                    Apport de séniorité technique auprès de l’équipe parisienne (cadrage, simplification des choix,
+                    accompagnement des développeurs)
+                  </li>
+
+                  <li>
+                    Interface avec le management pour clarifier les enjeux techniques et éclairer les décisions produit
+                    et architecture
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </article>
+
+          <!-- Renault -->
+          <article>
+            <header>
+              <div class="heading">
+                <p class="title-line">
+                  <span class="company">Renault Netherlands (via Keley)</span>
+                  <span class="separator">—</span>
+                  <span class="role">Directeur de projet / Dev senior</span>
+                </p>
+                <p class="context">
+                  Paris · Plateforme B2C de génération de leads pour le leasing automobile (Benelux)
+                </p>
+                <!-- Typescript, Angular 7, Webpack, Docker, Symfony -->
+              </div>
+              <p class="date">février 2019 — avril 2020</p>
+            </header>
+            <ul>
+              <li>
+                Pilotage opérationnel et technique d’une plateforme B2C en lien direct avec les équipes métier Renault
+                (Pays-Bas) et les systèmes de financement (RCI)
+              </li>
+              <li>
+                Intervention en forte autonomie sur un périmètre complet (priorisation, cadrage, développement et MEP)
+              </li>
+              <li>
+                Mise en place de boucles de feedback courtes avec le métier (AB testing, itérations rapides) pour
+                identifier plus rapidement les leviers de génération de leads
+              </li>
+              <li>
+                Amélioration de la vélocité de delivery (cycles ramenés de plusieurs semaines à quelques jours) par
+                simplification de l’organisation et des processus
+              </li>
+              <li>
+                Stabilisation du système existant (flux de données, incidents de production) dans un contexte contraint
+              </li>
+              <li>
+                Contribution directe au développement (features, correctifs, production) en parallèle du pilotage
+                opérationnel
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <footer>
+          <span>Gabriel Delépine</span>
+          <span>7 avril 2026</span>
+          <span>Page 3 sur 6</span>
+        </footer>
+      </div>
+
+      <!-- PAGE 4 -->
+      <div class="page">
+        <header class="hero">
+          <h1 class="name">Gabriel Delépine</h1>
+          <p class="headline">Senior Software Engineer, Web Platforms &amp; Performance</p>
+          <p class="specialty">TypeScript · Node.js · Web Platforms</p>
+        </header>
+
+        <section>
+          <h2>Expériences professionnelles (ordre chronologique)</h2>
+
+          <!-- AXA -->
+          <article>
+            <header>
+              <div class="heading">
+                <p class="title-line">
+                  <span class="company">Keley pour AXA Partners</span>
+                  <span class="separator">—</span>
+                  <span class="role">Team Lead</span>
+                </p>
+                <p class="context">
+                  Paris · Développement d’un widget web embarqué de souscription d’assurances, intégré sur sites
+                  partenaires (parcours B2B2C)
+                </p>
+                <!-- React.js, Node.js, Typescript, Webpack, Docker, Microsoft Azure -->
+              </div>
+              <p class="date">septembre 2018 — janvier 2019</p>
+            </header>
+            <ul>
+              <li>Reprise d’un projet à risque dans un contexte d’exigence sécurité élevée (pentest + audit AXA)</li>
+              <li>
+                Structuration du delivery (clarification du backlog, allocation ciblée des tâches, réduction des
+                dépendances inter-développeurs) pour fluidifier la production
+              </li>
+              <li>
+                Mise en conformité des pratiques et implémentation des recommandations issues des audits de sécurité
+              </li>
+              <li>
+                Conception d’un widget web isolé (intégration sur environnements tiers, contraintes de compatibilité et
+                de poids)
+              </li>
+              <li>
+                Interface technique avec les équipes AXA (architecture, sécurité, reporting) pour sécuriser les
+                arbitrages et la communication
+              </li>
+              <li>
+                Contribution directe au développement et accompagnement technique de l’équipe (pair programming, review)
+              </li>
+            </ul>
+          </article>
+
+          <!-- Leboncoin 1/2 -->
+          <article class="group">
+            <header>
+              <div class="heading">
+                <p class="title-line">
+                  <span class="company">Leboncoin</span>
+                </p>
+                <p class="context">
+                  Paris · Progression interne sur 4 postes successifs dans le cadre de la refonte de la plateforme
+                  leboncoin.fr
+                </p>
+              </div>
+              <p class="date">mai 2016 — août 2018</p>
+            </header>
+
+            <div class="sub">
+              <article>
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="role">Lead Dev Fullstack</span>
+                    </p>
+                    <p class="context">
+                      Migration du backoffice et déblocage de la transition du legacy vers les nouvelles APIs · janvier
+                      2018 — août 2018
+                    </p>
+                    <!-- React.js, Node.js, Jest, Webpack, Redux, Docker, API Gateway, Kong, Go -->
+                  </div>
+                </header>
+                <ul>
+                  <li>
+                    Reprise de la migration du backoffice, composant fortement couplé au monolithe historique et
+                    bloquant l’avancée de la refonte de la plateforme
+                  </li>
+
+                  <li>
+                    Mise en place d’une nouvelle base React adaptée aux usages internes, avec migration progressive page
+                    à page dans une interface unifiée
+                  </li>
+
+                  <li>
+                    Conception d’un layer de compatibilité permettant de connecter les nouvelles interfaces soit aux
+                    nouvelles APIs, soit au système legacy, afin d’avancer sans attendre la disponibilité complète des
+                    backend
+                  </li>
+
+                  <li>
+                    Stratégie de décommissionnement accéléré de l’ancien backoffice et reprise d’un backlog de
+                    fonctionnalités jusque-là gelé par les contraintes du legacy
+                  </li>
+                </ul>
+              </article>
+
+              <article>
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="role">Dev lors d'un Hackathon</span>
+                    </p>
+                    <p class="context">Challenge innovation interne · juin 2018</p>
+                    <!-- React.js, Webpack, Material-UI, Docker, Modélisation et Mock API -->
+                  </div>
+                </header>
+                <ul>
+                  <li>2e place sur 13 équipes dans un hackathon interne centré sur l’aide à la télévente</li>
+
+                  <li>
+                    Réalisation technique en autonomie au sein d’une équipe pluridisciplinaire (data, produit,
+                    marketing)
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </article>
+        </section>
+
+        <footer>
+          <span>Gabriel Delépine</span>
+          <span>7 avril 2026</span>
+          <span>Page 4 sur 6</span>
+        </footer>
+      </div>
+
+      <!-- PAGE 5 -->
+      <div class="page">
+        <header class="hero">
+          <h1 class="name">Gabriel Delépine</h1>
+          <p class="headline">Senior Software Engineer, Web Platforms &amp; Performance</p>
+          <p class="specialty">TypeScript · Node.js · Web Platforms</p>
+        </header>
+
+        <section>
+          <h2>Expériences professionnelles (ordre chronologique)</h2>
+
+          <!-- Leboncoin 2/2 -->
+          <article class="group">
+            <header>
+              <div class="heading">
+                <p class="title-line">
+                  <span class="company">Leboncoin</span>
+                </p>
+                <p class="context">
+                  Paris · Progression interne sur 4 postes successifs dans le cadre de la refonte de la plateforme
+                  leboncoin.fr
+                </p>
+              </div>
+              <p class="date">mai 2016 — août 2018</p>
+            </header>
+            <div class="sub">
+              <article>
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="role">Lead Dev API</span>
+                    </p>
+                    <p class="context">
+                      Création d’un périmètre API dédié pour fluidifier l’intégration entre frontend et backend · avril
+                      2017 — janvier 2018
+                    </p>
+                    <!-- Node.js, Apollo GraphQL, PHP 7, Silex & Symfony, Guzzle, Nginx, bash, scripting, Datadog, Json- Schema -->
+                  </div>
+                </header>
+                <ul>
+                  <li>
+                    Création d’un périmètre API intermédiaire pour traiter les frictions entre équipes frontend et
+                    backend dans le cadre de la migration
+                  </li>
+
+                  <li>
+                    Promotion des mocks pour découpler producteurs et consommateurs d’API et accélérer le delivery
+                  </li>
+
+                  <li>
+                    Réalisation d’un PoC GraphQL documenté au niveau groupe, avec analyse argumentée des bénéfices,
+                    coûts et limites d’adoption
+                  </li>
+                </ul>
+              </article>
+
+              <article>
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="role">Consultant API</span>
+                    </p>
+                    <p class="context">
+                      Modélisation de l’architecture cible et des objets métier partagés entre frontend, backend et APIs
+                      · septembre 2016 — juin 2017
+                    </p>
+                  </div>
+                </header>
+                <ul>
+                  <li>Au sein d'une équipe de 4 personnes</li>
+                  <li>
+                    Participation à la définition de l’architecture cible de la plateforme au sein d’un groupe
+                    transverse frontend / backend
+                  </li>
+
+                  <li>
+                    Modélisation des objets métier, parcours et séquences API pour aligner les équipes sur des contrats
+                    communs
+                  </li>
+
+                  <li>
+                    Travail de normalisation visant à limiter les renommages et divergences entre couches, afin de
+                    préserver la lisibilité du système et réduire la complexité des évolutions
+                  </li>
+                </ul>
+              </article>
+
+              <article>
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="role">Lead Dev Frontend</span>
+                    </p>
+                    <p class="context">
+                      Migration du frontend vers une architecture web moderne isomorphique (SEO + performance) · mai
+                      2016 — avril 2017
+                    </p>
+                    <!-- React.js, Node.js, Jest, Redux, Server Side Rendering, App isomorphique, Flow JS, StoryBook, Travis
+                         + expérimentation de : Typescript, Web-worker, offline-first, Angular 2, RxJS (poc) -->
+                  </div>
+                </header>
+                <ul>
+                  <li>
+                    Recommandation de la stack frontend cible au démarrage de la refonte, après évaluation comparative
+                    des options disponibles (React, Angular 2, SSR/isomorphisme)
+                  </li>
+
+                  <li>
+                    Défense et formalisation d’une approche isomorphique permettant de concilier SEO, expérience
+                    utilisateur et base de code unique
+                  </li>
+
+                  <li>
+                    Mise en place des fondations frontend de la migration (React, tests unitaires à 100%, guidelines
+                    d’implémentation) dans un contexte de très forte exigence qualité
+                  </li>
+
+                  <li>
+                    Structuration d’une équipe frontend en forte croissance (de 8 à 15 développeurs) dans le cadre du
+                    passage en feature teams
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </article>
+        </section>
+
+        <footer>
+          <span>Gabriel Delépine</span>
+          <span>7 avril 2026</span>
+          <span>Page 5 sur 6</span>
+        </footer>
+      </div>
+
+      <!-- PAGE 6 -->
+      <div class="page">
+        <header class="hero">
+          <h1 class="name">Gabriel Delépine</h1>
+          <p class="headline">Senior Software Engineer, Web Platforms &amp; Performance</p>
+          <p class="specialty">TypeScript · Node.js · Web Platforms</p>
+        </header>
+
+        <section>
+          <h2>Expériences professionnelles (ordre chronologique)</h2>
+
+          <article>
+            <header>
+              <div class="heading">
+                <p class="title-line">
+                  <span class="company">Qapa</span>
+                  <span class="separator">—</span>
+                  <span class="role">Lead Dev Frontend, Dev Fullstack</span>
+                </p>
+                <p class="context">
+                  Paris · Refonte progressive d’une plateforme emploi, du monolithe Zend 1 vers un frontend AngularJS et
+                  des APIs dédiées
+                </p>
+                <!-- AngularJS, Grunt, PHP 7, Zend Framework 1 & 2, Apigility, Redis, Varnish, Oauth 2, Adyen, Bugsnag -->
+              </div>
+              <p class="date">octobre 2014 — avril 2016</p>
+            </header>
+            <ul>
+              <li>
+                Reprise et restructuration du frontend AngularJS sur la partie CVthèque, fonctionnalité centrale du
+                produit
+              </li>
+              <li>
+                Définition des fondations frontend de la nouvelle application (arborescence, build, guidelines, gestion
+                de l’état) dans un contexte de migration progressive
+              </li>
+              <li>
+                Mise en œuvre d’une cohabitation page par page entre le site legacy et la SPA, avec une attention
+                particulière à la continuité de l’expérience utilisateur
+              </li>
+              <li>
+                Conception de certains choix structurants côté frontend, notamment l’usage des query params comme source
+                de vérité pour les filtres et la navigation
+              </li>
+              <li>
+                Vigilance constante sur les performances d’AngularJS dans un contexte de forte croissance produit, afin
+                de limiter les effets de bord sur la mémoire et la fluidité
+              </li>
+              <li>
+                Contribution ponctuelle côté backend API, en appui du découplage frontend / backend engagé par le CTO
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <div class="heading">
+                <p class="title-line">
+                  <span class="company">Yappli</span>
+                  <span class="separator">—</span>
+                  <span class="role">Dev Fullstack</span>
+                </p>
+                <p class="context">
+                  Angers · Création d’un produit SaaS pour la gestion de commandes entre producteurs locaux et
+                  commerçants, incubé à Angers Technopole
+                </p>
+                <!-- HTML5, CSS3, Bootstrap.css, Responsive design, AngularJS, SPA, UI Bootstrap, PHP 5, Zend 1, Debian, Bash, Nginx -->
+              </div>
+              <p class="date">janvier 2013 — septembre 2014</p>
+            </header>
+            <ul>
+              <li>
+                Conception et développement complet d’une plateforme web (frontend, backend, infrastructure) pour la
+                gestion de commandes, catalogues et logistique entre producteurs et commerçants
+              </li>
+              <li>
+                Modélisation d’une base de données relationnelle complexe couvrant catalogues produits,
+                conditionnements, commandes, stocks, facturation et bons de livraison
+              </li>
+              <li>Développement d’un backend PHP (Zend) exposant la logique métier et d’un frontend AngularJS</li>
+              <li>Mise en place et administration d’une infrastructure dédiée (Debian, Nginx, MySQL)</li>
+              <li>
+                Collaboration directe avec des utilisateurs pilotes pour affiner les fonctionnalités et les parcours
+                métier
+              </li>
+              <li>
+                Expérimentation complète du cycle produit (conception, développement, mise en production), avec une
+                prise de recul sur la complexité initiale et les choix d’architecture
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <div class="heading">
+                <p class="title-line">
+                  <span class="company">Indépendant</span>
+                  <span class="separator">—</span>
+                  <span class="role">Dev Fullstack Freelance au forfait</span>
+                </p>
+                <p class="context">Angers · Développement de solutions web sur mesure pour des clients (B2B et B2C)</p>
+                <!-- PHP5, Mysql, jQuery, serveur dédié OVH, e-paiement -->
+              </div>
+              <p class="date">mars 2009 — septembre 2014</p>
+            </header>
+            <ul>
+              <li>
+                Conception et développement end-to-end d’applications web métier (commandes B2B, e-commerce, CRM,
+                emailing), de la modélisation des données au déploiement
+              </li>
+              <li>
+                Réalisation de projets en engagement au forfait, incluant cadrage, rédaction de cahiers des charges,
+                estimation
+              </li>
+              <li>
+                Mise en production de systèmes utilisés en conditions réelles, avec gestion des utilisateurs, workflows
+                métier et paiements
+              </li>
+              <li>Mise en place et administration d’infrastructures (serveurs dédiés ou mutualisés)</li>
+              <li>Interaction directe avec les clients pour affiner les besoins et arbitrer</li>
+            </ul>
+          </article>
+        </section>
+
+        <footer>
+          <span>Gabriel Delépine</span>
+          <span>7 avril 2026</span>
+          <span>Page 6 sur 6</span>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
