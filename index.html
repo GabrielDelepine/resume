@@ -39,6 +39,8 @@
         --small-size: 9pt;
         --section-title-size: 9pt;
         --company-size: 10.3pt;
+        --context-size: 9.8pt;
+        --context-margin-bottom: 4.1mm;
 
         --line-height-body: 1.45;
         --line-height-tight: 1.2;
@@ -237,60 +239,53 @@
         margin-bottom: var(--space-4);
 
         header {
-          display: grid;
-          grid-template-columns: minmax(0, 1fr) auto;
-          gap: 4mm;
-          align-items: start;
+          display: block;
           margin-bottom: 1.5mm;
 
-          .heading {
-            min-width: 0;
+          .title-line {
+            margin: 0;
+            display: flex;
+            align-items: baseline;
+            gap: 1.7mm;
+            line-height: 1.25;
 
-            .title-line {
+            .company {
+              font-size: var(--company-size);
+              font-weight: 650;
+              color: #2b2b2b;
               margin: 0;
-              display: flex;
-              flex-wrap: wrap;
-              align-items: baseline;
-              gap: 1.7mm;
-              line-height: 1.25;
-
-              .company {
-                font-size: var(--company-size);
-                font-weight: 650;
-                color: #2b2b2b;
-                margin: 0;
-              }
-
-              .separator {
-                color: var(--soft);
-                font-weight: 500;
-              }
-
-              .role {
-                font-size: 10.7pt;
-                font-weight: 680;
-                color: #1a1a1a;
-                margin: 0;
-              }
             }
 
-            .context {
-              margin: 1.1mm 0 2.2mm 0;
-              font-size: var(--small-size);
-              line-height: 1.3;
+            .separator {
+              color: var(--soft);
               font-weight: 500;
-              color: var(--muted);
+            }
+
+            .role {
+              font-size: 10.7pt;
+              font-weight: 680;
+              color: #1a1a1a;
+              margin: 0;
+            }
+
+            .date {
+              margin: 0 0 0 auto;
+              padding-top: 0.5mm;
+              font-size: var(--small-size);
+              line-height: 1.2;
+              font-weight: 500;
+              color: var(--soft);
+              white-space: nowrap;
+              font-variant-numeric: tabular-nums;
             }
           }
 
-          .date {
-            font-size: var(--small-size);
-            line-height: 1.2;
+          .context {
+            margin: 1.3mm 0 var(--context-margin-bottom) 0;
+            font-size: var(--context-size);
+            line-height: 1.35;
             font-weight: 500;
-            color: var(--soft);
-            white-space: nowrap;
-            margin: 0;
-            padding-top: 0.5mm;
+            color: var(--muted);
           }
         }
 
@@ -428,9 +423,9 @@
                       <span class="company">Accor</span>
                       <span class="separator">—</span>
                       <span class="role">Architecte Web</span>
+                      <span class="date">juin 2024 — mars 2026</span>
                     </p>
                   </div>
-                  <p class="date">juin 2024 — mars 2026</p>
                 </header>
                 <ul>
                   <li>
@@ -447,9 +442,9 @@
                       <span class="company">Ubisoft</span>
                       <span class="separator">—</span>
                       <span class="role">Architecte, Dev Senior</span>
+                      <span class="date">avril 2020 - mars 2023</span>
                     </p>
                   </div>
-                  <p class="date">avril 2020 - mars 2023</p>
                 </header>
                 <ul>
                   <li>
@@ -467,9 +462,9 @@
                       <span class="company">Leboncoin</span>
                       <span class="separator">—</span>
                       <span class="role">Lead Dev</span>
+                      <span class="date">mai 2016 — août 2018</span>
                     </p>
                   </div>
-                  <p class="date">mai 2016 — août 2018</p>
                 </header>
                 <ul>
                   <li>
@@ -487,9 +482,9 @@
                       <span class="company">Apside</span>
                       <span class="separator">—</span>
                       <span class="role">Architecte Web, Lead Dev</span>
+                      <span class="date">avril 2023 — janvier 2024</span>
                     </p>
                   </div>
-                  <p class="date">avril 2023 — janvier 2024</p>
                 </header>
                 <ul>
                   <li>
@@ -605,13 +600,13 @@
                   <span class="company">Accor</span>
                   <span class="separator">—</span>
                   <span class="role">Architecte Web</span>
+                  <span class="date">juin 2024 — mars 2026</span>
                 </p>
                 <p class="context">
                   Paris · Optimisation d’un BFF au cœur du tunnel de réservation all.com (100% du CA digital direct)
                 </p>
                 <!-- Apollo Server, Typescript, Node.js, AWS, Hive (The Guild) -->
               </div>
-              <p class="date">juin 2024 — mars 2026</p>
             </header>
             <ul>
               <li>
@@ -651,13 +646,13 @@
                   <span class="company">Apside</span>
                   <span class="separator">—</span>
                   <span class="role">Architecte Web, Lead Dev</span>
+                  <span class="date">avril 2023 — janvier 2024</span>
                 </p>
                 <p class="context">
                   Paris · PWA offline-first avec synchronisation de données et fonctionnement hors connexion
                 </p>
                 <!-- Progressive-Web-App, Typescript, React.js, IndexedDB, Offline-first -->
               </div>
-              <p class="date">avril 2023 — janvier 2024</p>
             </header>
             <ul>
               <li>
@@ -717,10 +712,10 @@
               <div class="heading">
                 <p class="title-line">
                   <span class="company">Ubisoft</span>
+                  <span class="date">avril 2020 — mars 2023</span>
                 </p>
                 <p class="context">Paris · Progression interne sur 2 postes successifs</p>
               </div>
-              <p class="date">avril 2020 — mars 2023</p>
             </header>
 
             <div class="sub">
@@ -729,10 +724,9 @@
                   <div class="heading">
                     <p class="title-line">
                       <span class="role">Architecte, Lead Dev</span>
+                      <span class="date">janvier 2021 — mars 2023</span>
                     </p>
-                    <p class="context">
-                      support.ubisoft.com · SEO, accessibilité et performance web · janvier 2021 — mars 2023
-                    </p>
+                    <p class="context">support.ubisoft.com · SEO, accessibilité et performance web</p>
                     <!-- Typescript, React.js, Node.js, NextJS → Webpack, Graphql, SSR, ES Module -->
                   </div>
                 </header>
@@ -769,10 +763,10 @@
                   <div class="heading">
                     <p class="title-line">
                       <span class="role">Dev Senior</span>
+                      <span class="date">avril 2020 — janvier 2021</span>
                     </p>
                     <p class="context">
-                      ubisoft.com · contrib au sein d’une équipe frontend répartie entre Paris et San Francisco · avril
-                      2020 — janvier 2021
+                      ubisoft.com · contrib au sein d’une équipe frontend répartie entre Paris et San Francisco, USA
                     </p>
                     <!-- Typescript, React.js, Node.js, GraphQL, SSR, CMS headless -->
                   </div>
@@ -805,13 +799,13 @@
                   <span class="company">Renault Netherlands (via Keley)</span>
                   <span class="separator">—</span>
                   <span class="role">Directeur de projet / Dev senior</span>
+                  <span class="date">février 2019 — avril 2020</span>
                 </p>
                 <p class="context">
                   Paris · Plateforme B2C de génération de leads pour le leasing automobile (Benelux)
                 </p>
                 <!-- Typescript, Angular 7, Webpack, Docker, Symfony -->
               </div>
-              <p class="date">février 2019 — avril 2020</p>
             </header>
             <ul>
               <li>
@@ -866,14 +860,14 @@
                   <span class="company">Keley pour AXA Partners</span>
                   <span class="separator">—</span>
                   <span class="role">Team Lead</span>
+                  <span class="date">septembre 2018 — janvier 2019</span>
                 </p>
                 <p class="context">
-                  Paris · Développement d’un widget web embarqué de souscription d’assurances, intégré sur sites
-                  partenaires (parcours B2B2C)
+                  Paris · Widget web embarqué de souscription d’assurances, intégré sur sites partenaires (parcours
+                  B2B2C)
                 </p>
                 <!-- React.js, Node.js, Typescript, Webpack, Docker, Microsoft Azure -->
               </div>
-              <p class="date">septembre 2018 — janvier 2019</p>
             </header>
             <ul>
               <li>Reprise d’un projet à risque dans un contexte d’exigence sécurité élevée (pentest + audit AXA)</li>
@@ -904,13 +898,13 @@
               <div class="heading">
                 <p class="title-line">
                   <span class="company">Leboncoin</span>
+                  <span class="date">mai 2016 — août 2018</span>
                 </p>
                 <p class="context">
                   Paris · Progression interne sur 4 postes successifs dans le cadre de la refonte de la plateforme
                   leboncoin.fr
                 </p>
               </div>
-              <p class="date">mai 2016 — août 2018</p>
             </header>
 
             <div class="sub">
@@ -919,10 +913,10 @@
                   <div class="heading">
                     <p class="title-line">
                       <span class="role">Lead Dev Fullstack</span>
+                      <span class="date">janvier 2018 — août 2018</span>
                     </p>
                     <p class="context">
-                      Migration du backoffice et déblocage de la transition du legacy vers les nouvelles APIs · janvier
-                      2018 — août 2018
+                      Migration du backoffice et déblocage de la transition du legacy vers les nouvelles APIs
                     </p>
                     <!-- React.js, Node.js, Jest, Webpack, Redux, Docker, API Gateway, Kong, Go -->
                   </div>
@@ -956,8 +950,9 @@
                   <div class="heading">
                     <p class="title-line">
                       <span class="role">Dev lors d'un Hackathon</span>
+                      <span class="date">juin 2018</span>
                     </p>
-                    <p class="context">Challenge innovation interne · juin 2018</p>
+                    <p class="context">Challenge innovation interne</p>
                     <!-- React.js, Webpack, Material-UI, Docker, Modélisation et Mock API -->
                   </div>
                 </header>
@@ -998,13 +993,13 @@
               <div class="heading">
                 <p class="title-line">
                   <span class="company">Leboncoin</span>
+                  <span class="date">mai 2016 — août 2018</span>
                 </p>
                 <p class="context">
                   Paris · Progression interne sur 4 postes successifs dans le cadre de la refonte de la plateforme
                   leboncoin.fr
                 </p>
               </div>
-              <p class="date">mai 2016 — août 2018</p>
             </header>
             <div class="sub">
               <article>
@@ -1012,10 +1007,11 @@
                   <div class="heading">
                     <p class="title-line">
                       <span class="role">Lead Dev API</span>
+                      <span class="date">avril 2017 — janvier 2018</span>
                     </p>
                     <p class="context">
-                      Création d’un périmètre API dédié pour fluidifier l’intégration entre frontend et backend · avril
-                      2017 — janvier 2018
+                      leboncoin.fr · Création d’un périmètre API dédié pour fluidifier l’intégration entre frontend et
+                      backend
                     </p>
                     <!-- Node.js, Apollo GraphQL, PHP 7, Silex & Symfony, Guzzle, Nginx, bash, scripting, Datadog, Json- Schema -->
                   </div>
@@ -1042,10 +1038,10 @@
                   <div class="heading">
                     <p class="title-line">
                       <span class="role">Consultant API</span>
+                      <span class="date">septembre 2016 — juin 2017</span>
                     </p>
                     <p class="context">
                       Modélisation de l’architecture cible et des objets métier partagés entre frontend, backend et APIs
-                      · septembre 2016 — juin 2017
                     </p>
                   </div>
                 </header>
@@ -1073,10 +1069,11 @@
                   <div class="heading">
                     <p class="title-line">
                       <span class="role">Lead Dev Frontend</span>
+                      <span class="date">mai 2016 — avril 2017</span>
                     </p>
                     <p class="context">
-                      Migration du frontend vers une architecture web moderne isomorphique (SEO + performance) · mai
-                      2016 — avril 2017
+                      leboncoin.fr · Migration du frontend vers une architecture web moderne isomorphique (SEO +
+                      performance)
                     </p>
                     <!-- React.js, Node.js, Jest, Redux, Server Side Rendering, App isomorphique, Flow JS, StoryBook, Travis
                          + expérimentation de : Typescript, Web-worker, offline-first, Angular 2, RxJS (poc) -->
@@ -1133,14 +1130,14 @@
                   <span class="company">Qapa</span>
                   <span class="separator">—</span>
                   <span class="role">Lead Dev Frontend, Dev Fullstack</span>
+                  <span class="date">octobre 2014 — avril 2016</span>
                 </p>
                 <p class="context">
-                  Paris · Refonte progressive d’une plateforme emploi, du monolithe Zend 1 vers un frontend AngularJS et
-                  des APIs dédiées
+                  Paris · Refonte progressive d’une plateforme emploi, du monolithe Zend 1 vers une SPA et des APIs
+                  dédiées
                 </p>
                 <!-- AngularJS, Grunt, PHP 7, Zend Framework 1 & 2, Apigility, Redis, Varnish, Oauth 2, Adyen, Bugsnag -->
               </div>
-              <p class="date">octobre 2014 — avril 2016</p>
             </header>
             <ul>
               <li>
@@ -1176,6 +1173,7 @@
                   <span class="company">Yappli</span>
                   <span class="separator">—</span>
                   <span class="role">Dev Fullstack</span>
+                  <span class="date">janvier 2013 — septembre 2014</span>
                 </p>
                 <p class="context">
                   Angers · Création d’un produit SaaS pour la gestion de commandes entre producteurs locaux et
@@ -1183,7 +1181,6 @@
                 </p>
                 <!-- HTML5, CSS3, Bootstrap.css, Responsive design, AngularJS, SPA, UI Bootstrap, PHP 5, Zend 1, Debian, Bash, Nginx -->
               </div>
-              <p class="date">janvier 2013 — septembre 2014</p>
             </header>
             <ul>
               <li>
@@ -1214,11 +1211,11 @@
                   <span class="company">Indépendant</span>
                   <span class="separator">—</span>
                   <span class="role">Dev Fullstack Freelance au forfait</span>
+                  <span class="date">mars 2009 — septembre 2014</span>
                 </p>
                 <p class="context">Angers · Développement de solutions web sur mesure pour des clients (B2B et B2C)</p>
                 <!-- PHP5, Mysql, jQuery, serveur dédié OVH, e-paiement -->
               </div>
-              <p class="date">mars 2009 — septembre 2014</p>
             </header>
             <ul>
               <li>
