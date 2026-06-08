@@ -1,0 +1,13 @@
+{
+  "endOfLine": "lf",
+  "semi": false,
+  "trailingComma": "es5",
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "printWidth": 120
+      }
+    }
+  ]
+}
