@@ -312,6 +312,27 @@
         }
       }
 
+      .page.compact-page {
+        --line-height-body: 1.35;
+        --context-margin-bottom: 3mm;
+
+        header.hero {
+          margin-bottom: var(--space-3);
+        }
+
+        article {
+          margin-bottom: var(--space-3);
+
+          li {
+            margin-bottom: 1.3mm;
+          }
+
+          li:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
       article.group {
         margin-top: 4mm;
 
@@ -391,8 +412,8 @@
           <div class="main">
             <header class="hero">
               <h1 class="name">Gabriel Delépine</h1>
-              <p class="headline">Architecte Web & Performance, Développeur Sénior</p>
-              <p class="specialty">TypeScript · Systèmes Web · Modélisation</p>
+              <p class="headline">Architecte logiciel & IA, Développeur sénior</p>
+              <p class="specialty">Harnais IA · Fiabilité · Performance</p>
             </header>
 
             <section class="summary">
@@ -408,17 +429,37 @@
               </p>
               <p>
                 J’interviens également pour débloquer des situations techniques dégradées et anticiper les limites
-                structurelles d’une stack, afin d’éviter l’accumulation de dette et les effets d’obsolescence, notamment
-                dans des contextes de pression concurrentielle accrue.
+                structurelles d’un système, afin d’éviter l’accumulation de dette et les effets d’obsolescence.
               </p>
               <p>
-                Avec l’essor des IA génératives, la production de code s’accélère, rendant la capacité à structurer et
-                rationaliser les systèmes déterminante.
+                Ma pratique est désormais native IA. Dans la conception de harnais comme dans l’intégration de l’IA aux
+                produits, je conserve la même exigence : maîtriser le fonctionnement du système, limiter les aléas et
+                n’ajouter de complexité que lorsqu’elle apporte un bénéfice réel.
               </p>
             </section>
 
             <section>
               <h2>Aperçu des expériences clés</h2>
+
+              <article class="preview">
+                <header>
+                  <div class="heading">
+                    <p class="title-line">
+                      <span class="company">R&amp;D indépendante</span>
+                      <span class="separator">-</span>
+                      <span class="role">Ingénierie & IA</span>
+                      <span class="date">avril - août 2026</span>
+                    </p>
+                  </div>
+                </header>
+                <ul>
+                  <li>
+                    Conception de harnais IA et d’un back-office réduisant les reprises et la consommation de tokens.
+                    Développement d’un SaaS exploitant l’IA dans son parcours, avec gestion des erreurs et des cas
+                    limites.
+                  </li>
+                </ul>
+              </article>
 
               <article class="preview">
                 <header>
@@ -433,28 +474,8 @@
                 </header>
                 <ul>
                   <li>
-                    Stabilisation et simplification d’un BFF multi-clients critique au cœur du tunnel de réservation,
-                    via optimisation du cache, de la compression et renforcement de l’observabilité.
-                  </li>
-                </ul>
-              </article>
-
-              <article class="preview">
-                <header>
-                  <div class="heading">
-                    <p class="title-line">
-                      <span class="company">Ubisoft</span>
-                      <span class="separator">-</span>
-                      <span class="role">Architecte, Dev Senior</span>
-                      <span class="date">avril 2020 - mars 2023</span>
-                    </p>
-                  </div>
-                </header>
-                <ul>
-                  <li>
-                    Refonte intégrale de support.ubisoft.com en posant une architecture simple et performante, tout en
-                    intégrant efficacement les expertises accessibilité, SEO et tracking. Contributions sur ubisoft.com
-                    au sein d’une équipe répartie entre la France et les États-Unis.
+                    Fiabilisation d’un système critique au cœur du tunnel de réservation all.com : simplification,
+                    optimisation des performances et des coûts d’infrastructure, renforcement de l’observabilité.
                   </li>
                 </ul>
               </article>
@@ -472,9 +493,8 @@
                 </header>
                 <ul>
                   <li>
-                    Engagement transverse dans la refonte de la plateforme, du frontend au backoffice : frontend
-                    isomorphique (SSR), rapprochement front/back, et déblocage de la migration du backoffice grâce à un
-                    layer de compatibilité permettant de livrer progressivement.
+                    Déblocage de la migration du back-office grâce à une couche de compatibilité avec l’existant,
+                    permettant de livrer progressivement malgré les dépendances au système historique.
                   </li>
                 </ul>
               </article>
@@ -483,17 +503,17 @@
                 <header>
                   <div class="heading">
                     <p class="title-line">
-                      <span class="company">Apside</span>
+                      <span class="company">Ubisoft</span>
                       <span class="separator">-</span>
-                      <span class="role">Architecte Web, Lead Dev</span>
-                      <span class="date">avril 2023 - janvier 2024</span>
+                      <span class="role">Architecte, Dev Senior</span>
+                      <span class="date">avril 2020 - mars 2023</span>
                     </p>
                   </div>
                 </header>
                 <ul>
                   <li>
-                    Conception d’une PWA offline-first avec persistance locale et synchronisation, garantissant la
-                    continuité d’usage en environnement réseau instable.
+                    Refonte du site support en posant une architecture simple et performante. MVP livré en avance et à
+                    un coût inférieur au prévisionnel, en respectant les exigences de qualité et de conformité.
                   </li>
                 </ul>
               </article>
@@ -526,6 +546,10 @@
                   <span class="meta-label">LinkedIn</span>
                   linkedin.com/in/gabriel-delépine-286111b1/
                 </div>
+                <div class="meta-item">
+                  <span class="meta-label">CV à jour</span>
+                  <a href="https://gabrieldelepine.github.io/resume/">gabrieldelepine.github.io/<wbr />resume</a>
+                </div>
               </div>
             </section>
 
@@ -533,27 +557,20 @@
               <h2>Compétences</h2>
               <div class="skill-groups">
                 <div class="skill-group">
-                  <h3>Architecture web</h3>
-                  <div class="items">Architecture système · API Design · Modélisation · BFF · GraphQL</div>
-                </div>
-
-                <div class="skill-group">
-                  <h3>Stack Javascript</h3>
-                  <div class="items">TypeScript · Node.js · React · Écosystème JavaScript avancé</div>
-                </div>
-
-                <div class="skill-group">
-                  <h3>Applications web</h3>
+                  <h3>Ingénierie IA</h3>
                   <div class="items">
-                    PWA · Offline-first · Web Components · SSR / SPA / PWA · Buildless · ES Modules
+                    Conception de harnais IA · Skills et outils pour agents · Intégration fiable de LLM
                   </div>
                 </div>
 
                 <div class="skill-group">
-                  <h3>Performance et exploitation</h3>
-                  <div class="items">
-                    Performance web · Scalabilité · Observabilité · Optimisation des coûts · Systèmes distribués
-                  </div>
+                  <h3>Architecture logicielle</h3>
+                  <div class="items">Architecture système · API Design · Modélisation</div>
+                </div>
+
+                <div class="skill-group">
+                  <h3>Fiabilité & performance</h3>
+                  <div class="items">Contrôle qualité · Observabilité · Optimisation des coûts · Performance</div>
                 </div>
               </div>
             </section>
@@ -572,21 +589,60 @@
 
         <footer>
           <span>Gabriel Delépine</span>
-          <span>14 avril 2026</span>
+          <span>15 septembre 2026</span>
           <span>Page 1 sur 6</span>
         </footer>
       </div>
 
       <!-- PAGE 2 -->
-      <div class="page">
+      <div class="page compact-page">
         <header class="hero">
           <h1 class="name">Gabriel Delépine</h1>
-          <p class="headline">Architecte Web & Performance, Développeur Sénior</p>
-          <p class="specialty">TypeScript · Systèmes Web · Modélisation</p>
+          <p class="headline">Architecte logiciel & IA, Développeur sénior</p>
+          <p class="specialty">Harnais IA · Fiabilité · Performance</p>
         </header>
 
         <section>
           <h2>Expériences professionnelles (ordre chronologique)</h2>
+
+          <!-- R&D indépendante en IA -->
+          <article id="investissement-ia">
+            <header>
+              <div class="heading">
+                <p class="title-line">
+                  <span class="company">R&amp;D indépendante</span>
+                  <span class="separator">-</span>
+                  <span class="role">Ingénierie & IA</span>
+                  <span class="date">avril - août 2026 · 5 mois</span>
+                </p>
+                <p class="context">
+                  Développement natif IA, conception de harnais et intégration fiable de LLM dans les applications.
+                </p>
+              </div>
+            </header>
+            <ul>
+              <li>
+                Conception de harnais IA (agent harnesses) : fiabiliser la production de code, scripter les tâches
+                répétitives, réduire les aléas et contrôler la qualité
+              </li>
+              <li>
+                Création d’un back-office et de scripts déterministes pour une application iOS issue du vibe coding :
+                modifications plus fiables, consommation de tokens réduite et historique Git plus lisible
+              </li>
+              <li>
+                Conception et développement d’un SaaS d’accompagnement à l’entrepreneuriat : intégration de l’IA au
+                parcours utilisateur, avec maîtrise des erreurs et des cas limites pour assurer la fiabilité du produit
+              </li>
+              <li>
+                Pilotage du développement avec l’IA : détection des impasses, redécoupage des tâches et révision de
+                l’approche pour réduire les itérations improductives
+              </li>
+              <li>
+                Arbitrage sur le rôle de l’IA : exécuter la tâche ou produire un outil réutilisable, selon les exigences
+                de fiabilité, la fréquence d’usage et le coût.
+              </li>
+            </ul>
+          </article>
 
           <!-- Accor -->
           <article>
@@ -686,7 +742,7 @@
 
         <footer>
           <span>Gabriel Delépine</span>
-          <span>14 avril 2026</span>
+          <span>15 septembre 2026</span>
           <span>Page 2 sur 6</span>
         </footer>
       </div>
@@ -695,8 +751,8 @@
       <div class="page">
         <header class="hero">
           <h1 class="name">Gabriel Delépine</h1>
-          <p class="headline">Architecte Web & Performance, Développeur Sénior</p>
-          <p class="specialty">TypeScript · Systèmes Web · Modélisation</p>
+          <p class="headline">Architecte logiciel & IA, Développeur sénior</p>
+          <p class="specialty">Harnais IA · Fiabilité · Performance</p>
         </header>
 
         <section>
@@ -830,7 +886,7 @@
 
         <footer>
           <span>Gabriel Delépine</span>
-          <span>14 avril 2026</span>
+          <span>15 septembre 2026</span>
           <span>Page 3 sur 6</span>
         </footer>
       </div>
@@ -839,8 +895,8 @@
       <div class="page">
         <header class="hero">
           <h1 class="name">Gabriel Delépine</h1>
-          <p class="headline">Architecte Web & Performance, Développeur Sénior</p>
-          <p class="specialty">TypeScript · Systèmes Web · Modélisation</p>
+          <p class="headline">Architecte logiciel & IA, Développeur sénior</p>
+          <p class="specialty">Harnais IA · Fiabilité · Performance</p>
         </header>
 
         <section>
@@ -907,7 +963,7 @@
                   <div class="heading">
                     <p class="title-line">
                       <span class="role">Lead Dev Fullstack</span>
-                      <span class="date">janvier 2018 - août 2018</span>
+                      <span class="date">janvier - août 2018</span>
                     </p>
                     <p class="context">
                       Migration du backoffice et déblocage de la transition du legacy vers les nouvelles APIs
@@ -974,7 +1030,7 @@
 
         <footer>
           <span>Gabriel Delépine</span>
-          <span>14 avril 2026</span>
+          <span>15 septembre 2026</span>
           <span>Page 4 sur 6</span>
         </footer>
       </div>
@@ -983,8 +1039,8 @@
       <div class="page">
         <header class="hero">
           <h1 class="name">Gabriel Delépine</h1>
-          <p class="headline">Architecte Web & Performance, Développeur Sénior</p>
-          <p class="specialty">TypeScript · Systèmes Web · Modélisation</p>
+          <p class="headline">Architecte logiciel & IA, Développeur sénior</p>
+          <p class="specialty">Harnais IA · Fiabilité · Performance</p>
         </header>
 
         <section>
@@ -1096,7 +1152,7 @@
 
         <footer>
           <span>Gabriel Delépine</span>
-          <span>14 avril 2026</span>
+          <span>15 septembre 2026</span>
           <span>Page 5 sur 6</span>
         </footer>
       </div>
@@ -1105,8 +1161,8 @@
       <div class="page">
         <header class="hero">
           <h1 class="name">Gabriel Delépine</h1>
-          <p class="headline">Architecte Web & Performance, Développeur Sénior</p>
-          <p class="specialty">TypeScript · Systèmes Web · Modélisation</p>
+          <p class="headline">Architecte logiciel & IA, Développeur sénior</p>
+          <p class="specialty">Harnais IA · Fiabilité · Performance</p>
         </header>
 
         <section>
@@ -1223,7 +1279,7 @@
 
         <footer>
           <span>Gabriel Delépine</span>
-          <span>14 avril 2026</span>
+          <span>15 septembre 2026</span>
           <span>Page 6 sur 6</span>
         </footer>
       </div>
